@@ -3,35 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Projects</title>
+    <title> Artemis Ntountoulakis Resume </title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <h1>Your Name - Projects</h1>
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="cv.html">CV</a> |
-            <a href="projects.html">Projects</a>
-        </nav>
-    </header>
+<div class="resume">
+  <div class="base">
+    <div class="profile">
+      <div class="info">
+        <h1 class="name">Artemis Ntountoulakis</h1>
+        <h2 class="job">Data Scientist</h2>
+      </div>
+    </div>
 
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Project Name:</strong> Personal Portfolio Website<br>
-                <strong>Technologies:</strong> HTML, CSS, JavaScript<br>
-                <p>Description: Created a personal website to showcase my CV and projects.</p>
-                <a href="https://github.com/username/project-repo">View on GitHub</a>
-            </li>
-        </ul>
-    </section>
+    <!-- New Buttons Section -->
+    <div class="navigation">
 
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+      <button onclick="window.location.href='index.html';">
+        <i class="fa-solid fa-house"></i> Home
+      </button>
 
+      <a href= "pdf/CV_Artemis_Ntountoulakis.pdf" target="_blank">
+        <button>
+          <i class="fa-solid fa-file"></i> CV
+        </button>
+      </a>
+
+      <button onclick="window.location.href='projects.html';">
+        <i class="fa-solid fa-diagram-project"></i> Portfolio
+      </button>
+    </div>
+
+
+    <div class="about">
+      <h3>About Me</h3>I am a passionate data scientist dedicated to solving business challenges through innovative solutions. I specialize in leveraging Python to build machine learning models and develop end-to-end automated tools—from data extraction to delivering insightful visualizations—transforming complex problems into actionable, full-scale solutions.
+    </div>
+    <div class="contact">
+      <h3>Contact Me</h3>
+      <div class="address"><a href="https://maps.app.goo.gl/cgMxtuae78aFnmP7A"><i class="fas fa-map-marker"></i><span>Prague, Czech Republic</span></a></div>
+      <div class="email"><a href="mailto:artemis.ntountou@gmail.com"><i class="fas fa-envelope"></i><span>artemis.ntountou@gmail.com</span></a></div>
+    </div>
+    <div class="follow">
+      <div class="box">
+        <a href="https://www.linkedin.com/in/artemis-ntountoulakis" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/ntountoulakis" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="func">
+
+      <!-- Project Boxes Section -->
+    <div class="project-section">
+      <div class="project-box">
+        <a href="https://github.com/ntountoulakis/ntountoulakis.github.io" class="project-title" target="_blank">
+          CV Github IO
+        </a>
+        <p>The page that we are currently viewing in order to briefly describe myself.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+</div>
+
+
+<script src="js/script.js"></script>
 </body>
 </html>
