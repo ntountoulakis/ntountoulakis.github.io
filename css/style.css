@@ -41,6 +41,10 @@ h3 {
   font-size: 1.25em;
 }
 
+.justified-text {
+    text-align: justify;
+}
+
 .resume {
   width: 100vw;
   background: #121212; /* black  */
@@ -241,15 +245,11 @@ h3 {
   padding-bottom: 22px;
 }
 
-
-.resume .func .work ul li:hover::before,
-.resume .func .achieve ul li:hover::before {
+.highlight {
   animation: circle 1.2s infinite;
+  color: #fdd835;
 }
-.resume .func .work ul li:hover span,
-.resume .func .achieve ul li:hover span {
-  color: #fdd835; /* yellow  */;
-}
+
 @keyframes circle {
   from {
     box-shadow: 0 0 0 0px #fdd835; /* yellow  */;
@@ -258,6 +258,7 @@ h3 {
     box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
   }
 }
+
 .resume .func .work ul li:first-of-type::before,
 .resume .func .achieve ul li:first-of-type::before {
   width: 10px;
@@ -432,10 +433,11 @@ h3 {
 
 /* projects.html */
 
- .project-section {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+.project-section {
+    display: flex; /* Places the children (project-boxes) next to each other */
+    align-items: flex-start; /* Aligns items to the start of the cross-axis */
+    gap: 25px; /* Adds consistent spacing between project-boxes */
+    flex-wrap: wrap; /* Allows wrapping if the screen is too narrow */
     margin-top: 20px;
 }
 
